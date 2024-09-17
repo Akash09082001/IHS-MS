@@ -1,19 +1,17 @@
 
-
 const details = document.querySelectorAll(".details");
 
-// Add the onclick listeners.
 details.forEach((targetDetail) => {
-    targetDetail.addEventListener("click", () => {
-        // Close all the details that are not targetDetail.
+    targetDetail.addEventListener("click", (event) => {
+        event.stopPropagation();
+
         details.forEach((detail) => {
-            if (detail !== targetDetail) {
+            if (detail !== targetDetail && detail.contains(event.target) === false) {
                 detail.removeAttribute("open");
             }
         });
     });
 });
-
 
 
 // image view modal
@@ -24,12 +22,10 @@ const videoModal = document.getElementById("popup");
 
 function showImage(imageSrc, title, content) {
     document.getElementById('imgModal').classList.remove('hidden');
-    // Set the image source, title, and content
     document.getElementById('showImg').src = imageSrc;
     document.getElementById('modalTitle').textContent = title;
     document.getElementById('modalContent').textContent = content;
 
-    // Show the image modal
 }
 
 function closeImage() {
@@ -70,43 +66,6 @@ document.querySelectorAll('.enquireNow').forEach(function (button) {
 });
 
 
-
-// const heroSection = document.getElementById('Hero');
-// const floatBtn = document.getElementById('floatBtn');
-
-// // Initial check when the page loads
-// updateButtonVisibility();
-
-// // Listen for scroll events to dynamically update button visibility
-// window.addEventListener('scroll', updateButtonVisibility);
-
-// function updateButtonVisibility() {
-//     const isInsideHeroSection = isInHeroSection(floatBtn, heroSection);
-
-//     if (isInsideHeroSection) {
-//         floatBtn.style.visibility = 'hidden';
-//     } else {
-//         floatBtn.style.visibility = 'visible';
-//     }
-// }
-
-// function isInHeroSection(element, heroSection) {
-//     if (!heroSection) {
-//         return false;
-//     }
-
-//     const buttonRect = element.getBoundingClientRect();
-//     const heroRect = heroSection.getBoundingClientRect();
-
-//     return (
-//         buttonRect.top >= heroRect.top &&
-//         buttonRect.bottom <= heroRect.bottom &&
-//         buttonRect.left >= heroRect.left &&
-//         buttonRect.right <= heroRect.right
-//     );
-// }
-
-
 function openVideoModal() {
     videoModal.style.display = "block";
 }
@@ -116,11 +75,6 @@ function closeVideoModal() {
 }
 function getUTM() {
     const queryString = window.location.search;
-    // console.log(queryString)
-    // const parameters = new URLSearchParams(queryString);
-    // console.log(parameters);
-    // const value = parameters.get('utm_campaignid');
-
     return queryString
 }
 function redirect(url) {

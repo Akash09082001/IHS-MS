@@ -166,6 +166,16 @@
     transition: transform 0.5s ease-in-out;
 }
 
+.faq-details[open] div div ul li .faq-details1 summary span svg {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.faq-details[open] div div ul li .faq-details1[open] summary span svg {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
 .text-stroke {
     color: white;
     -webkit-text-stroke: 0.6px black;

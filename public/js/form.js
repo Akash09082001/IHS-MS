@@ -68,7 +68,7 @@ form.addEventListener("submit", (event) => {
 
         // api code
 
-        var apiUrl = "https://service.letsupgrade.in/v2/itm/isu/leads";
+        // var apiUrl = "https://service.letsupgrade.in/v2/itm/isu/leads";
 
         fetch(apiUrl, {
             method: "POST",

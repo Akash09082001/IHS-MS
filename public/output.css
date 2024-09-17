@@ -1357,6 +1357,10 @@ video {
   width: 100vw;
 }
 
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -3635,6 +3639,11 @@ video {
 
   .xl\:text-lg{
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl{
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }

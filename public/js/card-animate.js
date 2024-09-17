@@ -23,7 +23,7 @@ const cardAnimation = (cursorId, cardId) => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    for (let i = 1; i < 12; i++) {
+    for (let i = 1; i < 13; i++) {
         let cursorId = `cursor${i}`;
         let cardId = `card${i}`;
         cardAnimation(cursorId, cardId);

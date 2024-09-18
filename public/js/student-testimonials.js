@@ -91,7 +91,7 @@ function showData(studentsTSData) {
     let listCard = `
         <article class="flex flex-col gap-3 h-280 w-80 rounded-md p-5 bg-white border border-gray-300">
             <div class="flex w-full gap-3">
-                <div class="flex w-13 h-13 items-center justify-center rounded-full bg-brand-yellow shimmer-effect1">
+                <div class="flex w-13 h-13 items-center justify-center rounded-full bg-glory-blue-500 shimmer-effect1">
                     <img loading="lazy" src=${studentsTSData.sTSImg} alt=${studentsTSData.name}
                         class="flex h-full w-full object-contain object-bottom rounded-full">
                 </div>

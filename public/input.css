@@ -33,7 +33,7 @@
 }
 
 .btn {
-    @apply flex h-fit w-fit px-5 py-2 text-sm md:text-base rounded-md text-white bg-brand-red my-auto transition-all hover:bg-black border-2 border-transparent hover:border-brand-red hover:text-white shimmer-effect1;
+    @apply flex h-fit w-fit px-5 py-2 text-sm md:text-base rounded-md text-white bg-glory-red-500 my-auto transition-all hover:bg-black border-2 border-transparent hover:border-glory-red-500 hover:text-white shimmer-effect1;
 }
 
 .shimmer-effect {
@@ -189,7 +189,7 @@
 }
 
 .st-gradient {
-    @apply bg-gradient-to-b from-brand-red via-brand-red to-transparent;
+    @apply bg-gradient-to-b from-glory-red-500 via-glory-red-500 to-transparent;
 }
 
 .brochure-banner-gradiant {

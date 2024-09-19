@@ -144,12 +144,13 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="flex flex-col w-full top-0 fixed z-30 bg-white shadow">
+    <header class="flex flex-col w-full top-0 fixed z-30 bg-white backdrop-blur-md bg-opacity-60 shadow">
+        <div id="tikker10" class="flex"></div>
 
         <div class="grid grid-cols-3 lg:flex  w-full max-w-7xl sm:mx-auto gap-2 px-2 py-2 lg:px-0 justify-between ">
             <div class="flex w-full col-span-2 lg:col-span-1">
-                <div class="flex sm:grid sm:grid-cols-3 xl:grid-cols-4 justify-start items-start w-full sm:divide-x">
-                    <div class="flex w-full h-13 ">
+                <div class="flex sm:grid sm:grid-cols-3 xl:grid-cols-4 justify-start items-start w-full sm:space-x-2">
+                    <div class="flex w-full h-13 sm:border-r">
                         <img src="https://media.itm.ac.in/ISU_LOGO_4a84a68c11.webp" alt="ITM University logo"
                             class="flex w-fit h-full object-contain object-left">
                     </div>
@@ -168,7 +169,7 @@
         </div>
     </header>
 
-    <main class="flex w-full flex-col pt-16 ">
+    <main class="flex w-full flex-col pt-16 lg:pt-[100px]">
 
         <div class="flex w-full fixed bottom-0 z-30 bg-white">
             <button aria-id="enquire-now" aria-heading="Enquire Now" onclick="openModal()"
@@ -201,17 +202,19 @@
             <div class="flex flex-col w-full md:py-5 gap-4">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 md:px-5 gap-4 w-full max-w-7xl mx-auto">
-                    <div class="flex relative w-full h-fit md:order-2 ">
-                        <div class="flex relative w-fit h-fit my-auto md:rounded-md">
-                            <video id="myVideo" poster="https://media.itm.ac.in/video_banner_f16984ad78.webp"
+                    <div class="flex relative w-full h-fit md:order-2 md:justify-center md:items-center">
+                        <div class="flex relative aspect-video max-w-xl w-fit h-fit my-auto ">
+                            <!-- <video id="myVideo" poster="https://media.itm.ac.in/video_banner_f16984ad78.webp"
                                 class=" flex aspect-video h-fit w-full md:w-fit md:rounded-xl" muted loop playsinline>
                                 <source src="https://media.itm.ac.in/herovideo1_5fdf77f53b.mp4" type="video/mp4" />
-                            </video>
+                            </video> -->
+                            <img src="https://cdn.itm.edu/assets/hero_banner_white_61c4d03871.png" alt="" srcset=""
+                                class="w-full h-full">
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 md:gap-4 w-full px-5 md:px-0 md:order-1">
                         <div class="flex relative flex-col gap-1 w-fit">
-                            <div class="text-sm md:text-base lg:text-lg font-bold">
+                            <!-- <div class="text-sm md:text-base lg:text-lg font-bold">
                                 <span class="flex absolute right-0 -top-2 w-fit text-glory-blue-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-14 lg:h-16 w-14 lg:w-16"
                                         viewBox="0 0 80 80" fill="currentColor">
@@ -226,20 +229,19 @@
                                             fill="#FFBB00" />
                                     </svg>
                                 </span>
-                            </div>
-                            <h1 class="flex font-bold s gap-1 flex-col text-4xl lg:text-6xl w-fit">
-                                <span class="bg-glory-blue-500 font-poppins text-white font-bold w-fit px-2 rounded-md">
+                            </div> -->
+                            <h1 class="flex font-bold s gap-1 flex-col text-4xl lg:text-5xl w-fit">
+                                <span class="font-poppins text-black font-semibold w-fit px-2 rounded-md">
                                     ISU X LU MS
                                 </span>
                                 <span class="gap-2 flex w-full items-end">
-                                    <span
-                                        class="bg-glory-blue-500 font-poppins text-white font-bold w-fit px-2 rounded-md">Abroad
+                                    <span class="font-poppins text-black font-semibold w-fit px-2 rounded-md">Abroad
                                         Program</span>
                                 </span>
 
                             </h1>
                         </div>
-                        <div class="flex w-full">
+                        <div class="flex flex-col gap-4 w-full">
                             <ul class="flex flex-col gap-2 text-base w-full">
                                 <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
                                     <span class="flex w-fit">
@@ -294,29 +296,11 @@
                                     </span>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="flex w-full">
-                            <ul class="flex flex-col gap-0 text-base w-full">
-                                <!-- <li class="flex w-full">
-                                    <strong>Classes Commence :</strong>&nbsp;
-                                    <strong class="text-glory-red-500">31<sup>st</sup> July 2024</strong>
-                                </li> -->
-                                <!-- <li class="flex text-sm md:text-base lg:text-lg w-full">
-                                    <strong class="font-bold">Last Intake Deadline :</strong>&nbsp;
-                                    <strong class="text-glory-red-500 font-bold">15<sup>th</sup> July 2024</strong>
-                                </li> -->
-                                <li class="flex w-full">
-                                    <strong class="flex w-fit gap-2 font-semibold">
-                                        <span class="text-glory-red-500 text-xl">Admissions Open For 2025-29</span>
-                                    </strong>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class=" flex w-full gap-3">
-                            <button onclick="openModal()" aria-id="enquire-now" aria-heading="Enquire Now"
-                                class="btn enquireNow">Enquire
-                                Now</button>
+                            <div class="flex w-full">
+                                <button onclick="openModal()" aria-id="enquire-now" aria-heading="Enquire Now"
+                                    class="btn enquireNow">Enquire
+                                    Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,13 +308,15 @@
                 <div class="grid grid-cols-1 px-5 gap-5 w-full max-w-7xl mx-auto">
                     <div class="flex flex-col gap-3 w-full items-center justify-center">
                         <h2
-                            class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-bold  items-center justify-center ">
+                            class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-semibold items-center justify-center text-center">
+                            <span
+                                class="w-fit flex mx-auto lg:mx-0 px-3 md:px-5 py-1 md:py-2 text-center rounded-md bg-black text-white items-center">
+                                Programs
+                                Designed for Ambitious Global Professionals &nbsp;
 
-                            <strong class="flex">
-                                <span
-                                    class="w-fit mx-auto lg:mx-0 px-3 md:px-5 py-1 md:py-2 text-center rounded-md bg-black text-white ">Programs
-                                    Designed for Ambitious Global Professionals 🌍</span>
-                            </strong>
+                                <img src="https://cdn.itm.edu/assets/globe_64_57f6aedcf0.gif" alt="" srcset=""
+                                    class="size-8">
+                            </span>
                         </h2>
                         <span
                             class="flex w-full text-sm md:text-sm lg:text-base xl:text-lg text-center items-center max-w-3xl justify-center">
@@ -340,38 +326,26 @@
                     </div>
 
                     <div class="flex w-full overflow-x-scroll md:overflow-x-hidden card-scroll py-3">
-                        <div class="flex w-auto justify-start gap-3">
+                        <div class="flex w-auto justify-start lg:w-fit lg:mx-auto gap-3">
 
                             <div
                                 class="flex border border-gray-300 w-40 md:w-full max-w-xs rounded-md transition-all hover:shadow-md hover:-translate-y-2">
-                                <img src="https://media.itm.ac.in/ai_ml_613bf71039.webp"
+                                <img src="https://cdn.itm.edu/assets/program1_8eb282dc4f.png"
                                     alt="Artificial Intelligence and machine learning"
                                     class="flex w-full h-full object-cover rounded-md">
                             </div>
                             <div
                                 class="flex border border-gray-300 w-40 md:w-full max-w-xs rounded-md transition-all hover:shadow-md hover:-translate-y-2">
-                                <img src="https://media.itm.ac.in/ar_vr1_2754b212eb.webp" alt="ar/vr"
+                                <img src="https://cdn.itm.edu/assets/program2_d946cf713a.png" alt="ar/vr"
                                     class="flex w-full h-full object-cover rounded-md">
                             </div>
                             <div
                                 class="flex border border-gray-300 w-40 md:w-full max-w-xs rounded-md transition-all hover:shadow-md hover:-translate-y-2">
-                                <img src="https://media.itm.ac.in/data_science_96b2ef4710.webp" alt="Data Science"
+                                <img src="https://cdn.itm.edu/assets/program3_c13e74bf31.png" alt="Data Science"
                                     class="flex w-full h-full object-cover rounded-md">
                             </div>
-                            <div
-                                class="flex border border-gray-300 w-40 md:w-full max-w-xs rounded-md transition-all hover:shadow-md hover:-translate-y-2">
-                                <img src="https://media.itm.ac.in/web_3_54c304db46.webp" alt="web 3"
-                                    class="flex w-full h-full object-cover rounded-md">
-                            </div>
-                            <div
-                                class="flex border border-gray-300 w-40 md:w-full max-w-xs rounded-md transition-all hover:shadow-md hover:-translate-y-2">
-                                <img src="https://media.itm.ac.in/cyber_security_29a8430d01.webp" alt="cyber_security"
-                                    class="flex w-full h-full object-cover rounded-md">
-                            </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -613,13 +587,11 @@
             <div class="flex flex-col w-full gap-8 md:gap-8 lg:gap-10 px-5 py-5 md:py-8 max-w-7xl mx-auto">
                 <div class="flex w-full items-center justify-center">
                     <h2
-                        class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-bold  items-center justify-center ">
-                        <strong class="flex w-full text-center">
-                            <span
-                                class="flex w-fit mx-auto px-3 md:px-5 py-1 md:py-2 rounded-md bg-white text-black ">Average
-                                Salaries Across Countries for MS Abroad Graduates
-                            </span>
-                        </strong>
+                        class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-semibold items-center justify-center text-center">
+                        <span
+                            class="flex w-fit mx-auto px-3 md:px-5 py-1 md:py-2 rounded-md bg-white text-black ">Average
+                            Salaries Across Countries for MS Abroad Graduates
+                        </span>
                     </h2>
                 </div>
 
@@ -702,7 +674,7 @@
             </div>
         </section>
 
-        <section id="Placement" class="flex w-full">
+        <!-- <section id="Placement" class="flex w-full">
             <div class="flex flex-col w-full gap-8 md:gap-8 lg:gap-10 px-5 py-5 md:py-8 max-w-7xl mx-auto">
 
                 <div class="flex flex-col gap-2 w-full">
@@ -996,7 +968,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
         <div id="tikker2" class="flex"></div>
 
@@ -1032,8 +1004,8 @@
             <div class="flex flex-col w-full max-w-7xl mx-auto gap-5 px-5 md:gap-8 lg:gap-10 py-5 md:py-8 lg:py-10">
 
                 <div class="flex flex-col gap-3 w-full">
-                    <h2 class="flex flex-col md:flex-row text-base md:text-lg lg:text-xl xl:text-2xl gap-2 md:gap-5
-                         font-bold items-center justify-center w-full ">
+                    <h2
+                        class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-semibold items-center justify-center text-center">
                         The Cutting-Edge MSc Curriculum at Sheffield Hallam University ✨
                     </h2>
                     <p class="flex w-full">
@@ -1370,8 +1342,8 @@
 
                 <div class="flex gap-3 flex-col w-full">
                     <h2
-                        class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-bold  items-center justify-center ">
-                        <strong class="flex md:hidden w-full flex-col gap-2 lg:gap-0 lg:flex-row">
+                        class="flex flex-col text-base md:text-lg lg:text-xl xl:text-2xl font-semibold items-center justify-center text-center">
+                        <span class="flex md:hidden w-full flex-col gap-2 lg:gap-0 lg:flex-row">
                             <span
                                 class="w-fit mx-auto lg:mx-0 px-3 md:px-5 py-1 md:py-2 rounded-md bg-black text-white ">The
                                 Truly Next-Gen</span>
@@ -1393,8 +1365,8 @@
                                     </svg>
                                 </span>
                             </span>
-                        </strong>
-                        <strong class="hidden md:flex">
+                        </span>
+                        <span class="hidden md:flex">
                             <span
                                 class="flex w-fit mx-auto gap-2 lg:mx-0 px-3 md:px-5 py-1 md:py-2 rounded-md bg-black text-white ">The
                                 Truly Next-Gen B.Tech CSE Curriculum
@@ -1413,7 +1385,7 @@
                                     </svg>
                                 </span>
                             </span>
-                        </strong>
+                        </span>
                     </h2>
                     <p class="flex w-full">
                         <span class="w-full text-sm md:text-sm lg:text-base xl:text-lg text-center max-w-3xl mx-auto">
@@ -1429,7 +1401,7 @@
                     <div class="flex flex-col gap-5 w-full ">
                         <ul class="flex flex-col w-full text-sm md:text-sm lg:text-base gap-4 cursor-pointer">
                             <li class="flex w-full bg-white">
-                                <details
+                                <details open
                                     class="faq-details details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
                                     <summary class="flex relative py-3 pl-3 w-full items-center">
                                         <span class="flex w-[90%] text-lg font-semibold ">MSc Computing</span>
@@ -1443,8 +1415,8 @@
                                         </span>
                                     </summary>
                                     <div class="flex flex-col w-full gap-5 py-4 px-3">
-                                        <ul class="flex flex-col gap-4 w-full">
-                                            <li class="flex flex-col w-full gap-2">
+                                        <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
+                                            <li class="flex flex-col w-full gap-2 lg:col-span-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
                                                     Comprehensive
                                                     Curriculum</span>
@@ -1543,7 +1515,7 @@
                                                 <span
                                                     class="text-base md:text-lg font-bold text-glory-red-500">Curriculum</span>
                                             </div>
-                                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                                            <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
                                                         class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
@@ -1647,8 +1619,8 @@
                                         </span>
                                     </summary>
                                     <div class="flex flex-col w-full gap-5 py-4 px-3">
-                                        <ul class="flex flex-col gap-4 w-full">
-                                            <li class="flex flex-col w-full gap-2">
+                                        <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
+                                            <li class="flex flex-col w-full gap-2 lg:col-span-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
                                                     Comprehensive
                                                     Curriculum</span>
@@ -1758,7 +1730,7 @@
                                                 <span
                                                     class="text-base md:text-lg font-bold text-glory-red-500">Curriculum</span>
                                             </div>
-                                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                                            <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
                                                         class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
@@ -1848,8 +1820,8 @@
                                         </span>
                                     </summary>
                                     <div class="flex flex-col w-full gap-5 py-4 px-3">
-                                        <ul class="flex flex-col gap-4 w-full">
-                                            <li class="flex flex-col w-full gap-2">
+                                        <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
+                                            <li class="flex flex-col w-full gap-2 lg:col-span-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
                                                     Comprehensive
                                                     Curriculum</span>
@@ -1903,11 +1875,6 @@
                                                             challenges.
                                                         </span>
                                                     </li>
-                                                </ul>
-                                            </li>
-                                            <li class="flex flex-col w-full gap-2">
-                                                <ul
-                                                    class="flex flex-col text-sm md:text-base w-full list-disc gap-2 list-inside pl-3">
                                                     <li class="text-sm md:text-base">
                                                         <span class="font-semibold">
                                                             Live Projects:
@@ -1930,63 +1897,66 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li class="flex flex-col w-full gap-2">
+                                                <span class="text-base md:text-lg font-bold text-glory-red-500">3.
+                                                    Career
+                                                    Prospects</span>
+                                                <p class="flex text-sm md:text-base">
+                                                    The MSc Big Data Analytics program prepares you for roles in various
+                                                    industries including:
+                                                </p>
+                                                <ul
+                                                    class="flex flex-col text-sm md:text-base w-full list-disc gap-2 list-inside pl-3">
+                                                    <li class="text-sm md:text-base">
+                                                        <span class="font-semibold">
+                                                            Pharmaceuticals:
+                                                        </span>
+                                                        <span>
+                                                            Analyze clinical data for drug development and research.
+                                                        </span>
+                                                    </li>
+                                                    <li class="text-sm md:text-base">
+                                                        <span class="font-semibold">
+                                                            Finance:
+                                                        </span>
+                                                        <span>
+                                                            Manage and interpret financial data to guide investment
+                                                            strategies.
+                                                        </span>
+                                                    </li>
+                                                    <li class="text-sm md:text-base">
+                                                        <span class="font-semibold">
+                                                            Marketing:
+                                                        </span>
+                                                        <span>
+                                                            Utilize data to develop and optimize marketing campaigns.
+                                                        </span>
+                                                    </li>
+                                                    <li class="text-sm md:text-base">
+                                                        <span class="font-semibold">
+                                                            Retail:
+                                                        </span>
+                                                        <span>
+                                                            Apply data insights to improve sales strategies and customer
+                                                            experience.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <p class="flex text-sm md:text-base">
+                                                    Public and private sector organizations such as IBM, Amazon,
+                                                    Facebook,
+                                                    and government agencies value the skills developed in this course,
+                                                    with
+                                                    high demand for data management and analytics professionals.
+                                                </p>
+                                            </li>
                                         </ul>
-                                        <div class="flex flex-col w-full gap-2">
-                                            <span class="text-base md:text-lg font-bold text-glory-red-500">Career
-                                                Prospects</span>
-                                            <p class="flex text-sm md:text-base">
-                                                The MSc Big Data Analytics program prepares you for roles in various
-                                                industries including:
-                                            </p>
-                                            <ul
-                                                class="flex flex-col text-sm md:text-base w-full list-disc gap-2 list-inside pl-3">
-                                                <li class="text-sm md:text-base">
-                                                    <span class="font-semibold">
-                                                        Pharmaceuticals:
-                                                    </span>
-                                                    <span>
-                                                        Analyze clinical data for drug development and research.
-                                                    </span>
-                                                </li>
-                                                <li class="text-sm md:text-base">
-                                                    <span class="font-semibold">
-                                                        Finance:
-                                                    </span>
-                                                    <span>
-                                                        Manage and interpret financial data to guide investment
-                                                        strategies.
-                                                    </span>
-                                                </li>
-                                                <li class="text-sm md:text-base">
-                                                    <span class="font-semibold">
-                                                        Marketing:
-                                                    </span>
-                                                    <span>
-                                                        Utilize data to develop and optimize marketing campaigns.
-                                                    </span>
-                                                </li>
-                                                <li class="text-sm md:text-base">
-                                                    <span class="font-semibold">
-                                                        Retail:
-                                                    </span>
-                                                    <span>
-                                                        Apply data insights to improve sales strategies and customer
-                                                        experience.
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            <p class="flex text-sm md:text-base">
-                                                Public and private sector organizations such as IBM, Amazon, Facebook,
-                                                and government agencies value the skills developed in this course, with
-                                                high demand for data management and analytics professionals.
-                                            </p>
-                                        </div>
                                         <div class="flex w-full flex-col gap-4">
                                             <div class="flex w-full">
                                                 <span
                                                     class="text-base md:text-lg font-bold text-glory-red-500">Curriculum</span>
                                             </div>
-                                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                                            <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
                                                         class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">

@@ -103,7 +103,7 @@ function showData(studentsTSData) {
             </div>
             <div class="flex w-full">
                 <p class="text-xs lg:text-sm leading-5 text-justify">
-                    " ${studentsTSData.speack} "
+                    "${studentsTSData.speack}"
                 </p>
             </div>
         </article>                       

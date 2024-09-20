@@ -36,6 +36,13 @@
     @apply flex h-fit w-fit px-5 py-2 text-sm md:text-base rounded-md text-white bg-glory-red-500 my-auto transition-all hover:bg-black border-2 border-transparent hover:border-glory-red-500 hover:text-white shimmer-effect1;
 }
 
+.shinee {
+    animation:
+        2s infinite !important;
+    background-image: linear-gradient(90deg, transparent 33%, hsla(0, 0%, 100%, .3) 50%, transparent 66%) !important;
+    background-size: 300% 100% !important;
+}
+
 .shimmer-effect {
     -webkit-mask: linear-gradient(120deg, #fff 35%, #a91d5592, #a91d54 45%) right/250% 100%;
     animation: shimmer1 2.5s infinite;
@@ -154,6 +161,14 @@
 
 .add-box::before {
     content: '';
+}
+
+.faq-details summary {
+    @apply bg-white rounded-sm;
+}
+
+.faq-details[open] summary {
+    @apply bg-[#333333] text-white rounded-sm;
 }
 
 .faq-details[open] summary span svg {

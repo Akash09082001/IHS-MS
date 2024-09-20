@@ -147,7 +147,8 @@
     <header class="flex flex-col w-full top-0 fixed z-30 bg-white backdrop-blur-md bg-opacity-60 shadow">
         <div id="tikker10" class="flex"></div>
 
-        <div class="grid grid-cols-3 lg:flex  w-full max-w-7xl sm:mx-auto gap-2 px-2 py-2 lg:px-0 justify-between ">
+        <div
+            class="grid grid-cols-3 lg:flex  w-full max-w-7xl sm:mx-auto gap-2 px-2 py-1 md:py-2 lg:px-0 justify-between ">
             <div class="flex w-full col-span-2 lg:col-span-1">
                 <div class="flex sm:grid sm:grid-cols-3 xl:grid-cols-4 justify-start items-start w-full sm:space-x-2">
                     <div class="flex w-full h-13 sm:border-r">
@@ -169,9 +170,9 @@
         </div>
     </header>
 
-    <main class="flex w-full flex-col pt-16 lg:pt-[100px]">
+    <main class="flex w-full flex-col pt-[100px]">
 
-        <div class="flex w-full fixed bottom-0 z-30 bg-white">
+        <div class="flex md:hidden w-full fixed bottom-0 z-30 bg-white">
             <button aria-id="enquire-now" aria-heading="Enquire Now" onclick="openModal()"
                 class="enquireNow flex w-full bg-glory-red-500 py-2 md:py-3 text-base text-white text-center items-center justify-center shimmer-effect1">
                 Enquire Now
@@ -214,31 +215,33 @@
                     </div>
                     <div class="flex flex-col gap-3 md:gap-4 w-full px-5 md:px-0 md:order-1">
                         <div class="flex relative flex-col gap-1 w-fit">
-                            <!-- <div class="text-sm md:text-base lg:text-lg font-bold">
-                                <span class="flex absolute right-0 -top-2 w-fit text-glory-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 lg:h-16 w-14 lg:w-16"
-                                        viewBox="0 0 80 80" fill="currentColor">
-                                        <path
-                                            d="M53.4024 59.1687C56.778 39.262 62.5949 32.876 80.0039 29.8778C80.0039 29.8778 64.9916 26.8949 60.0039 19.3643C55.0161 11.8337 55.6029 7.23716 53.3046 0C51.2508 6.65037 51.5658 14.028 45.9207 20.2934C40.324 26.5051 33.1579 28.0685 26.7031 29.7311C44.3566 33.202 49.9832 39.9368 53.4024 59.1687Z"
-                                            fill="#FFBB00" />
-                                        <path
-                                            d="M37.1865 79.9047C38.6483 71.284 41.1671 68.5185 48.7057 67.22C48.7057 67.22 42.205 65.9283 40.0451 62.6671C37.8853 59.4059 38.1394 57.4154 37.1442 54.2812C36.2548 57.1612 36.3912 60.3562 33.9468 63.0695C31.5232 65.7595 28.4201 66.4365 25.625 67.1565C33.2694 68.6596 35.7059 71.5762 37.1865 79.9047Z"
-                                            fill="#FFBB00" />
-                                        <path
-                                            d="M12.8352 54.6707C14.458 45.0629 17.2544 41.9807 25.6235 40.5336C25.6235 40.5336 18.4066 39.0939 16.0088 35.4594C13.611 31.8248 13.8931 29.6063 12.7882 26.1133C11.8009 29.323 11.9523 32.8838 9.23855 35.9078C6.54804 38.9058 3.10303 39.6604 0 40.4628C8.48661 42.138 11.1915 45.3885 12.8352 54.6707Z"
-                                            fill="#FFBB00" />
-                                    </svg>
-                                </span>
-                            </div> -->
-                            <h1 class="flex font-bold s gap-1 flex-col text-4xl lg:text-5xl w-fit">
-                                <span class="font-poppins text-black font-semibold w-fit px-2 rounded-md">
-                                    ISU X LU MS
-                                </span>
-                                <span class="gap-2 flex w-full items-end">
-                                    <span class="font-poppins text-black font-semibold w-fit px-2 rounded-md">Abroad
-                                        Program</span>
-                                </span>
+                            <div class="text-sm md:text-base lg:text-lg font-semibold w-full">
+                                Complete your
 
+                            </div>
+                            <h1 class="flex font-semibold gap-1 flex-col text-4xl lg:text-4xl w-fit">
+                                <span
+                                    class="bg-glory-blue-700 relative font-poppins text-white font-semibold w-fit px-2 py-2 rounded-md">
+                                    Masters Abroad at
+                                    <span class="flex absolute -right-7 -top-7 w-fit text-brand-yellow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " viewBox="0 0 80 80"
+                                            fill="currentColor">
+                                            <path
+                                                d="M53.4024 59.1687C56.778 39.262 62.5949 32.876 80.0039 29.8778C80.0039 29.8778 64.9916 26.8949 60.0039 19.3643C55.0161 11.8337 55.6029 7.23716 53.3046 0C51.2508 6.65037 51.5658 14.028 45.9207 20.2934C40.324 26.5051 33.1579 28.0685 26.7031 29.7311C44.3566 33.202 49.9832 39.9368 53.4024 59.1687Z"
+                                                fill="#FFBB00" />
+                                            <path
+                                                d="M37.1865 79.9047C38.6483 71.284 41.1671 68.5185 48.7057 67.22C48.7057 67.22 42.205 65.9283 40.0451 62.6671C37.8853 59.4059 38.1394 57.4154 37.1442 54.2812C36.2548 57.1612 36.3912 60.3562 33.9468 63.0695C31.5232 65.7595 28.4201 66.4365 25.625 67.1565C33.2694 68.6596 35.7059 71.5762 37.1865 79.9047Z"
+                                                fill="#FFBB00" />
+                                            <path
+                                                d="M12.8352 54.6707C14.458 45.0629 17.2544 41.9807 25.6235 40.5336C25.6235 40.5336 18.4066 39.0939 16.0088 35.4594C13.611 31.8248 13.8931 29.6063 12.7882 26.1133C11.8009 29.323 11.9523 32.8838 9.23855 35.9078C6.54804 38.9058 3.10303 39.6604 0 40.4628C8.48661 42.138 11.1915 45.3885 12.8352 54.6707Z"
+                                                fill="#FFBB00" />
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span
+                                    class="bg-glory-blue-700 font-poppins text-white font-semibold w-fit px-2 py-2 rounded-md">
+                                    25% Savings
+                                </span>
                             </h1>
                         </div>
                         <div class="flex flex-col gap-4 w-full">
@@ -253,7 +256,9 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </span>
-                                    <span>Savings of upto INR 20 Lakhs
+                                    <span>Savings of upto <u
+                                            class="underline decoration-glory-blue-700 decoration-2 underline-offset-4">INR
+                                            20 Lakhs</u>
                                     </span>
                                 </li>
                                 <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
@@ -266,20 +271,9 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </span>
-                                    <span>Earn your Master's Degree from the UK
+                                    <span>Earn your Master's Degree from the <u
+                                            class="underline decoration-glory-blue-700 decoration-2 underline-offset-4">UK</u>
                                     </span>
-                                </li>
-                                <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
-                                    <span class="flex w-fit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19"
-                                            viewBox="0 0 17 19" fill="none">
-                                            <path
-                                                d="M9.98051 7.55619C10.0765 7.84234 10.2966 8.06981 10.5795 8.17518L14.1356 9.5L10.5795 10.8248C10.2966 10.9302 10.0765 11.1577 9.98051 11.4438L8.5 15.8563L7.01949 11.4438C6.92348 11.1577 6.70337 10.9302 6.42054 10.8248L2.86443 9.5L6.42054 8.17518C6.70337 8.06981 6.92348 7.84234 7.01949 7.55619L8.5 3.14368L9.98051 7.55619Z"
-                                                stroke="#B31942" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                    <span>Master IELTS and get VISA Interview Support</span>
                                 </li>
                                 <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
                                     <span class="flex w-fit">
@@ -292,14 +286,34 @@
                                         </svg>
                                     </span>
                                     <span>
-                                        2 Years Post Work VISA upon Course Completion
+                                        Master
+                                        <u
+                                            class="underline decoration-glory-blue-700 decoration-2 underline-offset-4">IELTS</u>
+                                        and get <u
+                                            class="underline decoration-glory-blue-700 decoration-2 underline-offset-4">VISA</u>
+                                        Interview Support
+                                    </span>
+                                </li>
+                                <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
+                                    <span class="flex w-fit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19"
+                                            viewBox="0 0 17 19" fill="none">
+                                            <path
+                                                d="M9.98051 7.55619C10.0765 7.84234 10.2966 8.06981 10.5795 8.17518L14.1356 9.5L10.5795 10.8248C10.2966 10.9302 10.0765 11.1577 9.98051 11.4438L8.5 15.8563L7.01949 11.4438C6.92348 11.1577 6.70337 10.9302 6.42054 10.8248L2.86443 9.5L6.42054 8.17518C6.70337 8.06981 6.92348 7.84234 7.01949 7.55619L8.5 3.14368L9.98051 7.55619Z"
+                                                stroke="#B31942" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <u class="underline decoration-glory-blue-700 decoration-2 underline-offset-4">2
+                                            Years</u>
+                                        Post Work VISA upon Course Completion
                                     </span>
                                 </li>
                             </ul>
                             <div class="flex w-full">
                                 <button onclick="openModal()" aria-id="enquire-now" aria-heading="Enquire Now"
-                                    class="btn enquireNow">Enquire
-                                    Now</button>
+                                    class="btn enquireNow">Check Eligibility</button>
                             </div>
                         </div>
                     </div>
@@ -1312,9 +1326,6 @@
 
         <div id="tikker3" class="flex"></div>
 
-
-
-
         <section id="CTA" class="flex w-full bg-black">
             <div class="flex flex-col px-5 gap-5 w-full max-w-7xl mx-auto">
 
@@ -1331,7 +1342,7 @@
                             <strong
                                 class="flex w-full text-sm md:text-base lg:text-lg font-semibold leading-8 text-center  text-white">To
                                 become a Future Tech Leader, you need all of these: Tech + Business + Networking, +
-                                Communication. Join the Future Tech Leaders Club 🚀 -- sai and sandesh </strong>
+                                Communication. Join the Future Tech Leaders Club 🚀 -- prasad and sandesh </strong>
                         </div>
                         <div class="flex w-full items-center justify-center">
                             <button aria-id="enquire-now" aria-heading="Fill the form & Join soon" onclick="openModal()"
@@ -1413,8 +1424,8 @@
                         <ul class="flex flex-col w-full text-sm md:text-sm lg:text-base gap-4 cursor-pointer">
                             <li class="flex w-full bg-white">
                                 <details open
-                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
-                                    <summary class="flex relative py-3 pl-3 w-full items-center">
+                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
+                                    <summary class="flex relative py-4 pl-4 w-full items-center">
                                         <span class="flex w-[90%] text-lg font-semibold ">MSc Computing</span>
                                         <span class="flex absolute right-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1425,7 +1436,7 @@
                                             </svg>
                                         </span>
                                     </summary>
-                                    <div class="flex flex-col w-full gap-5 py-4 px-3">
+                                    <div class="flex flex-col w-full gap-5 py-4 px-4">
                                         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
                                             <li class="flex flex-col w-full gap-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
@@ -1534,7 +1545,7 @@
                                             <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">PgCert in Computer Science
                                                                 (Computing)</span>
@@ -1565,7 +1576,7 @@
                                                 </li>
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">MSc Computing</span>
                                                             <span class="flex absolute right-3">
@@ -1618,8 +1629,8 @@
                             </li>
                             <li class="flex w-full bg-white">
                                 <details
-                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
-                                    <summary class="flex relative py-3 pl-3 w-full items-center">
+                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
+                                    <summary class="flex relative py-4 pl-4 w-full items-center">
                                         <span class="flex w-[90%] text-lg font-semibold ">MSc IT
                                             Management</span>
                                         <span class="flex absolute right-3">
@@ -1631,7 +1642,7 @@
                                             </svg>
                                         </span>
                                     </summary>
-                                    <div class="flex flex-col w-full gap-5 py-4 px-3">
+                                    <div class="flex flex-col w-full gap-5 py-4 px-4">
                                         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
                                             <li class="flex flex-col w-full gap-2 lg:col-span-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
@@ -1746,7 +1757,7 @@
                                             <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">At ITM</span>
                                                             <span class="flex absolute right-3">
@@ -1781,7 +1792,7 @@
                                                 </li>
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">At SHU</span>
                                                             <span class="flex absolute right-3">
@@ -1820,8 +1831,8 @@
                             </li>
                             <li class="flex w-full bg-white">
                                 <details
-                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
-                                    <summary class="flex relative py-3 pl-3 w-full items-center">
+                                    class="faq-details details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
+                                    <summary class="flex relative py-4 pl-4 w-full items-center">
                                         <span class="flex w-[90%] text-lg font-semibold ">MSc Big Data Analytics</span>
                                         <span class="flex absolute right-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1832,7 +1843,7 @@
                                             </svg>
                                         </span>
                                     </summary>
-                                    <div class="flex flex-col w-full gap-5 py-4 px-3">
+                                    <div class="flex flex-col w-full gap-5 py-4 px-4">
                                         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-full">
                                             <li class="flex flex-col w-full gap-2 lg:col-span-2">
                                                 <span class="text-base md:text-lg font-bold text-glory-red-500">1.
@@ -1972,7 +1983,7 @@
                                             <ul class="grid grid-cols-1 gap-4 w-full">
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">At ITM</span>
                                                             <span class="flex absolute right-3">
@@ -2004,7 +2015,7 @@
                                                 </li>
                                                 <li class="flex h-fit w-full">
                                                     <details
-                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group hover:border-glory-red-500  rounded-md">
+                                                        class="faq-details1 details flex flex-col w-full border-2  border-gray-300 group   rounded-md">
                                                         <summary class="flex relative py-3 pl-3 w-full items-center">
                                                             <span class="flex w-[90%]">At SHU</span>
                                                             <span class="flex absolute right-3">
@@ -2961,6 +2972,99 @@
             </div>
         </section>
 
+        <section id="Student Testimonials" class="flex w-full">
+            <div class="flex flex-col w-full max-w-7xl mx-auto gap-5 px-5 md:gap-8 lg:gap-10 py-5 md:py-8 lg:py-10 ">
+
+                <div class="flex w-full flex-col gap-3 items-center justify-center">
+                    <h2
+                        class="flex text-base md:text-lg lg:text-xl xl:text-2xl font-bold  items-center justify-center w-fit mx-auto px-3 md:px-5 py-1 md:py-2 rounded-md bg-black text-white ">
+                        Added Benefits
+                    </h2>
+                </div>
+
+                <div class="flex w-full overflow-x-auto card-scroll py-3">
+                    <div class="flex gap-3 w-fit justify-start">
+
+                        <div class="flex flex-col w-40 md:w-72 bg-white rounded-md shadow border">
+                            <div class="w-full rounded-md ">
+                                <video id="ringVideo"
+                                    class="aspect-video  rounded-t-md flex h-fit w-full object-contain " autoplay muted
+                                    loop playsinline>
+                                    <source src="https://cdn.itm.edu/assets/macbook_air_36fbe70e1e.mp4"
+                                        type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="p-3 md:p-6 space-y-1">
+                                <p class="text-xs md:text-sm font-semibold text-gray-900">
+                                    Get Macbook* on your Day 1 in Campus at ITM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-40 md:w-72 bg-white rounded-md shadow border">
+                            <div class="w-full rounded-md ">
+                                <video id="ringVideo"
+                                    class="aspect-video  rounded-t-md flex h-fit w-full object-contain " autoplay muted
+                                    loop playsinline>
+                                    <source src="https://cdn.itm.edu/assets/videoplayback_022e88b832.mp4"
+                                        type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="p-3 md:p-6 space-y-1">
+                                <p class="text-xs md:text-sm font-semibold text-gray-900">
+                                    Access to Tech Conferences and Developer Meetups Across Mumbai
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-40 md:w-72 bg-white rounded-md shadow border">
+                            <div class="w-full rounded-md ">
+                                <video id="ringVideo"
+                                    class="aspect-video  rounded-t-md flex h-fit w-full object-contain " autoplay muted
+                                    loop playsinline>
+                                    <source
+                                        src="https://video-previews.elements.envatousercontent.com/b40e9640-7f39-44ef-9337-fe53d5a74e38/watermarked_preview/watermarked_preview.mp4"
+                                        type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="p-3 md:p-6 space-y-1">
+                                <p class="text-xs md:text-sm font-semibold text-gray-900">
+                                    Free IELTS Training
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-40 md:w-72 bg-white rounded-md shadow border">
+                            <div class="w-full rounded-md ">
+                                <video id="ringVideo"
+                                    class="aspect-video  rounded-t-md flex h-fit w-full object-contain " autoplay muted
+                                    loop playsinline>
+                                    <source src="https://cdn.itm.edu/assets/AI_39f82e3971.mov" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="p-3 md:p-6 space-y-1">
+                                <p class="text-xs md:text-sm font-semibold text-gray-900">
+                                    Complimentary Professional Competency Certifications in Data Science and Generative
+                                    AI
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-40 md:w-72 bg-white rounded-md shadow border">
+                            <div class="w-full rounded-md ">
+                                <div class="relative aspect-video flex w-full ">
+                                    <img src="https://www.cio.com/wp-content/uploads/2023/05/certificate_gold_seal_certification_by_dny59_gettyimages-942721178_2400x1600-100788472-orig.jpg?quality=50&strip=all"
+                                        alt="" srcset="" class="w-full object-cover  rounded-t-md">
+                                </div>
+                            </div>
+                            <div class="p-3 md:p-6 space-y-1">
+                                <p class="text-xs md:text-sm font-semibold text-gray-900">
+                                    35 Value added certifications for FREE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="CTA" class="flex w-full bg-black">
             <div class="flex flex-col px-5 gap-5 w-full max-w-7xl mx-auto">
 
@@ -3726,7 +3830,7 @@
 
     </main>
 
-    <footer class="flex w-full bg-black mb-10">
+    <footer class="flex w-full bg-black mb-10 md:mb-0">
         <div
             class="flex flex-col gap-5 w-full max-w-7xl mx-auto py-10 px-5 bg-footer-banner bg-contain bg-no-repeat bg-bottom md:bg-[length:auto_50%] md:bg-[bottom_right]">
             <div class="flex h-16 w-full">

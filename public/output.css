@@ -1950,11 +1950,6 @@ video {
   border-top-color: rgb(169 29 84 / var(--tw-border-opacity));
 }
 
-.bg-\[\#333333\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#B31942\]{
   --tw-bg-opacity: 1;
   background-color: rgb(179 25 66 / var(--tw-bg-opacity));
@@ -1987,6 +1982,16 @@ video {
 
 .bg-current{
   background-color: currentColor;
+}
+
+.bg-glory-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 211 247 / var(--tw-bg-opacity));
+}
+
+.bg-glory-blue-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 167 240 / var(--tw-bg-opacity));
 }
 
 .bg-glory-blue-400{
@@ -2385,6 +2390,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2579,8 +2589,8 @@ video {
   padding-top: 2rem;
 }
 
-.pt-\[100px\]{
-  padding-top: 100px;
+.pt-\[82px\]{
+  padding-top: 82px;
 }
 
 .text-left{
@@ -2770,6 +2780,11 @@ video {
   color: rgb(10 49 97 / var(--tw-text-opacity));
 }
 
+.text-glory-blue-700{
+  --tw-text-opacity: 1;
+  color: rgb(6 30 60 / var(--tw-text-opacity));
+}
+
 .text-glory-red-500{
   --tw-text-opacity: 1;
   color: rgb(179 25 66 / var(--tw-text-opacity));
@@ -2856,8 +2871,32 @@ video {
   text-decoration-color: #061E3C;
 }
 
+.decoration-glory-red-100{
+  text-decoration-color: #F8C9D6;
+}
+
+.decoration-glory-red-200{
+  text-decoration-color: #F094AC;
+}
+
+.decoration-glory-red-400{
+  text-decoration-color: #E12859;
+}
+
 .decoration-glory-red-500{
   text-decoration-color: #B31942;
+}
+
+.decoration-yellow-300{
+  text-decoration-color: #fde047;
+}
+
+.decoration-yellow-400{
+  text-decoration-color: #facc15;
+}
+
+.decoration-yellow-500{
+  text-decoration-color: #eab308;
 }
 
 .decoration-2{
@@ -3098,8 +3137,6 @@ video {
   display: flex;
   height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   border-radius: 0.375rem;
   border-width: 2px;
   border-color: transparent;
@@ -3281,7 +3318,7 @@ video {
 
 .box-gradient1 {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(254, 216, 0, 0.9906556372549019) 59%, rgba(254, 216, 0, 1) 95%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(10, 49, 97, 0.883) 59%, rgba(10, 49, 97, 1) 95%);
 }
 
 .box-gradient2 {
@@ -3309,20 +3346,21 @@ video {
 }
 
 .faq-details summary{
-  border-radius: 0.125rem;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .faq-details[open] summary{
-  border-radius: 0.125rem;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .faq-details[open] summary span svg {
+  color: white;
   transform: rotate(180deg);
   transition: transform 0.5s ease-in-out;
 }
@@ -3523,10 +3561,6 @@ video {
     height: 3.5rem;
   }
 
-  .md\:h-32{
-    height: 8rem;
-  }
-
   .md\:h-4{
     height: 1rem;
   }
@@ -3584,6 +3618,10 @@ video {
     max-width: 32rem;
   }
 
+  .md\:max-w-xl{
+    max-width: 36rem;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3604,6 +3642,10 @@ video {
     gap: 1rem;
   }
 
+  .md\:gap-6{
+    gap: 1.5rem;
+  }
+
   .md\:gap-8{
     gap: 2rem;
   }
@@ -3618,10 +3660,6 @@ video {
 
   .md\:rounded-xl{
     border-radius: 0.75rem;
-  }
-
-  .md\:bg-boa-banner{
-    background-image: url('https://media.itm.ac.in/boa_banner_3_600c43a68e.webp');
   }
 
   .md\:bg-top-bg{
@@ -3644,8 +3682,8 @@ video {
     background-position: bottom right;
   }
 
-  .md\:bg-\[top_34\%_center\]{
-    background-position: top 34% center;
+  .md\:bg-\[top_36\%_center\]{
+    background-position: top 36% center;
   }
 
   .md\:bg-\[top_5\%_right\]{
@@ -3654,10 +3692,6 @@ video {
 
   .md\:bg-no-repeat{
     background-repeat: no-repeat;
-  }
-
-  .md\:p-6{
-    padding: 1.5rem;
   }
 
   .md\:px-0{
@@ -3675,6 +3709,11 @@ video {
     padding-right: 1.25rem;
   }
 
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -3688,6 +3727,11 @@ video {
   .md\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:py-5{
@@ -3706,6 +3750,15 @@ video {
 
   .md\:pt-8{
     padding-top: 2rem;
+  }
+
+  .md\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-base{
@@ -3788,10 +3841,6 @@ video {
     overflow-x: hidden;
   }
 
-  .lg\:bg-\[length\:auto_le\]{
-    background-size: auto le;
-  }
-
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -3872,6 +3921,10 @@ video {
     justify-content: space-between;
   }
 
+  .xl\:gap-10{
+    gap: 2.5rem;
+  }
+
   .xl\:overflow-x-hidden{
     overflow-x: hidden;
   }
@@ -3898,6 +3951,11 @@ video {
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:text-lg{

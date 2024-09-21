@@ -9,7 +9,7 @@ const studentsTSData = [
     {
         id: 2,
         name: "Manmeet Singh",
-        speack: "Gaining confidence and an edge in my field from the first semester, thanks to The School of Future Tech's powerful, modern curriculum,fuels my passion for continuous learning and achievement.",
+        speack: "Gaining confidence and an edge in my field from the first semester, thanks to ITM Skills University powerful, modern curriculum,fuels my passion for continuous learning and achievement.",
         sTSImg: "https://media.itm.ac.in/Manmeet_Singh_c26c527e32.webp"
     },
     {
@@ -91,7 +91,7 @@ function showData(studentsTSData) {
     let listCard = `
         <article class="flex flex-col gap-3 h-280 w-80 rounded-md p-5 bg-white border border-gray-300">
             <div class="flex w-full gap-3">
-                <div class="flex w-13 h-13 items-center justify-center rounded-full bg-glory-blue-500 shimmer-effect1">
+                <div class="flex w-13 h-13 items-center justify-center rounded-full bg-glory-blue-100 shimmer-effect1">
                     <img loading="lazy" src=${studentsTSData.sTSImg} alt=${studentsTSData.name}
                         class="flex h-full w-full object-contain object-bottom rounded-full">
                 </div>

@@ -1994,6 +1994,11 @@ video {
   background-color: rgb(107 167 240 / var(--tw-bg-opacity));
 }
 
+.bg-glory-blue-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 125 233 / var(--tw-bg-opacity));
+}
+
 .bg-glory-blue-400{
   --tw-bg-opacity: 1;
   background-color: rgb(18 87 171 / var(--tw-bg-opacity));
@@ -2012,6 +2017,11 @@ video {
 .bg-glory-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(1 5 9 / var(--tw-bg-opacity));
+}
+
+.bg-glory-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 201 214 / var(--tw-bg-opacity));
 }
 
 .bg-glory-red-500{
@@ -3346,13 +3356,13 @@ video {
 }
 
 .faq-details summary{
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .faq-details[open] summary{
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -3428,6 +3438,15 @@ video {
 
 .logos-slide {
   animation: 15s slide infinite linear;
+}
+
+details>summary {
+  list-style: none;
+}
+
+details>summary::marker,
+details>summary::-webkit-details-marker {
+  display: none;
 }
 
 .hover\:-translate-y-2:hover{
@@ -3819,14 +3838,6 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
-  .lg\:gap-0{
-    gap: 0px;
   }
 
   .lg\:gap-10{

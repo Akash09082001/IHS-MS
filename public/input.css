@@ -164,11 +164,11 @@
 }
 
 .faq-details summary {
-    @apply bg-white rounded-md;
+    @apply bg-white rounded-lg;
 }
 
 .faq-details[open] summary {
-    @apply bg-black text-white rounded-md;
+    @apply bg-black text-white rounded-lg;
 }
 
 .faq-details[open] summary span svg {
@@ -236,4 +236,13 @@
 
 .logos-slide {
     animation: 15s slide infinite linear;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::marker,
+details>summary::-webkit-details-marker {
+    display: none;
 }

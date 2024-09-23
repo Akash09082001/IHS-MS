@@ -146,20 +146,18 @@ boaDataCards.innerHTML = output1;
 
 function showBoaData(boaData) {
     let listCard = `
-    <div class="flex flex-col w-40 md:w-52 rounded-2xl">
-        <div class="flex w-full shadow-md bg-glory-red-100 rounded-2xl">
-            <img loading="lazy" src=${boaData.img} alt=${boaData.name}
-                class="flex w-full h-full object-cover rounded-2xl grayscale">
+    <div class="flex gap-5 flex-col w-80">
+        <div onclick="showImage('https://media.itm.ac.in/event19_12a0a007b5.webp', 'INAUGURATION CEREMONY', 'Start your Btech journey with a Bang')"
+            class="flex w-full border border-glory-blue-500 cursor-pointer shadow-sm hover:shadow-gloryblue5border-glory-blue-500 rounded-md transition-all hover:shadow-md ">
+            <img src="https://media.itm.ac.in/event19_12a0a007b5.webp" alt="event"
+                class="flex w-full h-full object-contain rounded-md">
         </div>
-        <div class="flex flex-col items-center justify-center gap-1 py-3">
-            <strong class="text-xs md:text-base text-center text-glory-red-500 font-bold py-2">${boaData.name}</strong>
-            <div class="flex h-8 md:h-auto w-fit mx-auto">
-                <p class="text-xs text-center">${boaData.position}</p>
-            </div>
-            <div class="flex h-12 w-fit mx-auto">
-                <img loading="lazy" src=${boaData.logo}
-                    class="flex h-full w-fit object-center object-contain" alt=${boaData.name}>
-            </div>
+        <div class="flex flex-col gap-2 w-full">
+            <strong class="text-sm font-semibold mx-auto uppercase">
+                Grand Program Inauguration
+            </strong>
+            <span class="text-center h-14 justify-center text-sm">
+            “Start your life-changing journey with a powerful and inspiring opening ceremony.”</span>
         </div>
     </div>                       
     `;

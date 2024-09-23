@@ -8,6 +8,7 @@ var city = document?.getElementById("city") || "Hut Bay";
 var captcha = document.getElementById("captcha");
 var term = document.getElementById("term");
 var countrySelect = document.getElementById("countrySelect");
+var specialization = document.getElementById("specialization");
 var captchaContainer = document.getElementById("genratedCaptcha");
 
 var url = getUrl();
@@ -20,6 +21,7 @@ var stateError = document.getElementById("stateError");
 var cityError = document.getElementById("cityError");
 var captchaError = document.getElementById("captchaError");
 var termError = document.getElementById("termError");
+var specializationError = document.getElementById("specializationError");
 
 
 // form modal
@@ -94,7 +96,7 @@ form.addEventListener("submit", (event) => {
                     },
                 });
                 form.reset();
-                window.location.href = "https://www.itm.edu/thankyou/itm-skills-university-b.tech-cse-thank-you-page"
+                // window.location.href = "https://www.itm.edu/thankyou/itm-skills-university-b.tech-cse-thank-you-page"
             })
             .catch(error => {
                 console.error("Error:", error);
@@ -189,6 +191,7 @@ function checkFormInputFields() {
         checkPhoneNumberValidity(number.value, numberError, "Invalid! Enter a 10-digit Mobile Number");
     const isStateValid = checkEmptyField(state.value, stateError, "State is Required");
     const isCityValid = checkEmptyField(city.value, cityError, "City is Required");
+    const isSpecializationValid = checkEmptyField(specialization.value, specializationError, "Specialization is Required");
     const isCaptchaValid = checkEmptyField(captcha.value, captchaError, "Captcha is Required") &&
         validateCaptcha(captcha.value, captchaContainer.dataset.captcha, captchaError, "Invalid! Captcha");
     const isTermValid = checkTermValidity(term.value, termError, "Please Check the Agreement Checkbox to proceed further!");
@@ -199,10 +202,10 @@ function checkFormInputFields() {
         const isCityValid = checkEmptyField(city.value, cityError, "City is Required");
 
         // Return true if all fields are valid, otherwise false
-        return isFullNameValid && isEmailValid && isNumberValid && isStateValid && isCityValid && isCaptchaValid && isTermValid;
+        return isFullNameValid && isEmailValid && isNumberValid && isStateValid && isCityValid && isCaptchaValid && isTermValid && isSpecializationValid;
     } else {
         // For other countries, no validation is required for state and city
-        return isFullNameValid && isEmailValid && isNumberValid && isCaptchaValid && isTermValid;
+        return isFullNameValid && isEmailValid && isNumberValid && isCaptchaValid && isTermValid && isSpecializationValid;
     }
     // return isFullNameValid && isEmailValid && isNumberValid && isStateValid && isCityValid && isCaptchaValid && isTermValid;
 }

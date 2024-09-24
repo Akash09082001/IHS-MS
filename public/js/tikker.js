@@ -1,5 +1,5 @@
 const useTikker = () => {
-    return `
+  return `
     <div class="w-full overflow-hidden flex bg-black">
         <div class="newsletter-container">
             <div class="newsletter-item">
@@ -137,14 +137,29 @@ const useTikker = () => {
         </div>
     </div>
     `;
-}
+};
 
 const tikkerContainers = (containerId) => {
-    document.getElementById(containerId).innerHTML = useTikker();
-}
+  document.getElementById(containerId).innerHTML = useTikker();
+};
 
-const array = ['tikker1', 'tikker2', 'tikker3', 'tikker4', 'tikker5', 'tikker6', 'tikker7', 'tikker8', 'tikker9', 'tikker10', 'tikker11']
+const array = [
+  "tikker1",
+  "tikker2",
+  "tikker3",
+  "tikker4",
+  "tikker5",
+  "tikker6",
+  "tikker7",
+  "tikker8",
+  "tikker9",
+  "tikker10",
+  "tikker11",
+  "tikker12",
+  "tikker13",
+  "tikker14",
+];
 
-array.forEach(element => {
-    tikkerContainers(element)
+array.forEach((element) => {
+  tikkerContainers(element);
 });

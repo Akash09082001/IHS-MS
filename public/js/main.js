@@ -61,7 +61,6 @@ document.querySelectorAll('.enquireNow').forEach(function (button) {
     button.addEventListener('click', function () {
         var info = getInfoFromButton(this);
         openModal(info.heading);
-        console.log("Button ID: " + info.id);
     });
 });
 

@@ -51,6 +51,7 @@ form.addEventListener("submit", (event) => {
         formData.append("countryCode", countrySelect.value)
         formData.append("state", state.value)
         formData.append("city", city.value)
+        formData.append("course", specialization.value)
         // Check if the country code is +91
         if (countrySelect.value == "+91") {
             formData.append("state", state?.value || "Andaman and Nicobar")
@@ -70,7 +71,7 @@ form.addEventListener("submit", (event) => {
 
         // api code
 
-        // var apiUrl = "https://service.letsupgrade.in/v2/itm/isu/leads";
+        var apiUrl = "https://service.letsupgrade.in/v2/itm/isu/leads/msc";
 
         fetch(apiUrl, {
             method: "POST",
@@ -89,14 +90,14 @@ form.addEventListener("submit", (event) => {
             .then(function (response) {
                 // console.log(response);
                 window.dataLayer.push({
-                    event: "customConversionBTECH",
+                    event: "customConversionMSC",
                     enhanced_conversion_data: {
                         email: email.value.trim().toLowerCase(),
                         phone_number: countrySelect.value + number.value,
                     },
                 });
                 form.reset();
-                // window.location.href = "https://www.itm.edu/thankyou/itm-skills-university-b.tech-cse-thank-you-page"
+                window.location.href = "http://itm.edu/thankyou/isu-ms-thank-you/"
             })
             .catch(error => {
                 console.error("Error:", error);

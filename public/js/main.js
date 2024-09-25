@@ -83,3 +83,9 @@ function redirect(url) {
         window.location = url
     }
 }
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        openModal("Enquire Now");
+    }, 15000);
+});

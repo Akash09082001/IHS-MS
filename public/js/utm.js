@@ -20,7 +20,7 @@ const applyNow = () => {
     const finalUrl = `${lpurl}${utmParameters}`;
 
     // Redirect the user to the final URL
-    window.location.href = finalUrl;
+    window.open(finalUrl, "_blank")
 };
 
 

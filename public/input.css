@@ -246,3 +246,7 @@ details>summary::marker,
 details>summary::-webkit-details-marker {
     display: none;
 }
+
+.search-li {
+    @apply py-1.5 pl-2 cursor-pointer hover:bg-gray-200 text-xs;
+}

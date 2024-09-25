@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="flex w-full items-center justify-end">
-                <button onclick='redirect("https://admission.isu.ac.in/bachelor-of-technology-application-form")'
+                <button onclick="applyNow()"
                     class="flex h-fit w-fit px-4 py-2 text-sm md:text-base rounded-md text-white border-2 border-transparent hover:border-glory-red-500 bg-glory-red-500 my-auto transition-all hover:bg-white hover:text-black shimmer-effect1">
                     Apply Now
                 </button>
@@ -520,22 +520,30 @@
                             </div>
                             <div class="grid grid-cols-2 gap-2 w-full">
                                 <div
-                                    class="location flex w-full flex-col relative bg-white transition-all group hover:shadow-sm hover:border-glory-blue-500 border rounded-md">
-                                    <select id="state" name="state" autocomplete="none"
-                                        class="flex w-full border text-sm h-9 px-3 rounded-sm outline-none border-none focus:outline-none">
-                                        <option value="" class="flex w-full h-full text-sm py-2 " disabled selected>
-                                            Select State</option>
-                                    </select>
+                                    class="location relative flex w-full flex-col bg-white transition-all group hover:shadow-sm hover:border-glory-blue-500 border rounded-md">
+                                    <input type="text" name="state" id="state"
+                                        class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
+                                        placeholder="Search State">
+                                    <div
+                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto">
+                                        <ul id="stateResults"
+                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit card-scroll">
+                                        </ul>
+                                    </div>
                                     <span class="flex absolute -bottom-4 left-0 text-xs text-white pl-3"
                                         id="stateError"></span>
                                 </div>
                                 <div
-                                    class="location flex w-full flex-col relative bg-white transition-all group hover:shadow-sm hover:border-glory-blue-500 border rounded-md">
-                                    <select id="city" name="city" disabled autocomplete="none"
-                                        class="flex w-full border text-sm h-9 px-3 rounded-sm outline-none border-none focus:outline-none">
-                                        <option value="" class="flex w-full h-full text-sm py-2 " disabled selected>
-                                            Select City</option>
-                                    </select>
+                                    class="location relative flex w-full flex-col bg-white transition-all group hover:shadow-sm hover:border-glory-blue-500 border rounded-md">
+                                    <input type="text" name="city" id="city"
+                                        class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
+                                        placeholder="Search City">
+                                    <div
+                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto">
+                                        <ul id="cityResults"
+                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit card-scroll">
+                                        </ul>
+                                    </div>
                                     <span class="flex absolute -bottom-4 left-0 text-xs text-white pl-3"
                                         id="cityError"></span>
                                 </div>
@@ -584,18 +592,18 @@
                                 </div>
                             </div>
                             <div class="flex w-full relative">
-                                <label for="term" class="w-full gap-2 items-center justify-start">
+                                <label for="term" class="w-full gap-2 flex items-center justify-start">
                                     <input type="checkbox" checked name="term" id="term"
                                         class="w-4 h-4 border rounded-md">
-                                    <span class="w-fit text-xs text-white "> &nbsp; I agree to receive information &
+                                    <span class="w-fit text-xs text-white"> I agree to receive information &
                                         accept
                                         T&C</span>
                                 </label>
-                                <span class=" flex absolute -bottom-4 left-0 text-xs text-white pl-3"
+                                <span class=" flex absolute -bottom-8 left-0 text-xs text-white pl-3"
                                     id="termError"></span>
                             </div>
 
-                            <div class="flex w-full mt-2 bg-white rounded-md">
+                            <div class="flex w-full mt-4 bg-white rounded-md">
                                 <button type="submit"
                                     class="bg-black hover:bg-white shimmer-effect1 hover:text-black w-full flex text-center items-center justify-center text-white py-3 text-base rounded-md">Submit</button>
                             </div>
@@ -644,18 +652,18 @@
                             <tr class="flex w-full">
                                 <td class="flex w-full">
                                     <span
-                                        class="bg-glory-red-500 flex w-full px-5 py-2 text-white text-sm md:text-base font-bold">Career
+                                        class="bg-glory-red-500 flex w-full px-3 py-2 text-white text-sm md:text-base font-bold">Career
                                         in India vs Career in the UK</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Working Hours</span>
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Working Hours</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: 47.7 hours per week,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: 47.7 hours per week,
                                         often extending beyond office hours.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -665,13 +673,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Tech Jobs
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Tech Jobs
                                         Availability</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Increasing
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Increasing
                                         opportunities but high competition.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -681,12 +689,12 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Work Culture</span>
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Work Culture</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Traditional,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Traditional,
                                         hierarchical structure with slower growth.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -699,18 +707,18 @@
                             <tr class="flex w-full">
                                 <td class="flex w-full">
                                     <span
-                                        class="bg-glory-red-500 flex w-full px-5 py-2 text-white text-sm md:text-base font-bold">Salary
+                                        class="bg-glory-red-500 flex w-full px-3 py-2 text-white text-sm md:text-base font-bold">Salary
                                         in India vs Salaries Abroad</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm"> In computing</span>
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm"> In computing</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">£43,000/yr (47 LPA)</span>
+                                    <span class="flex w-full text-sm items-center px-3 py-1">£43,000/yr (47 LPA)</span>
                                 </td>
                                 <td class="flex w-1/2">
                                     <span class="flex w-full text-sm px-2 py-1">₹4.2 LPA </span>
@@ -718,13 +726,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">In IT Management
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">In IT Management
                                     </span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">£38,000/yr (42 LPA)</span>
+                                    <span class="flex w-full text-sm items-center px-3 py-1">£38,000/yr (42 LPA)</span>
                                 </td>
                                 <td class="flex w-1/2">
                                     <span class="flex w-full text-sm px-2 py-1">₹7 LPA</span>
@@ -732,13 +740,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">In Big Data
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">In Big Data
                                         Analytics </span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">£54000/yr (60 LPA)</span>
+                                    <span class="flex w-full text-sm items-center px-3 py-1">£54000/yr (60 LPA)</span>
                                 </td>
                                 <td class="flex w-1/2">
                                     <span class="flex w-full text-sm px-2 py-1">₹12 LPA</span>
@@ -749,19 +757,19 @@
                             <tr class="flex w-full">
                                 <td class="flex w-full">
                                     <span
-                                        class="bg-glory-red-500 flex w-full px-5 py-2 text-white text-sm md:text-base font-bold">Studying
+                                        class="bg-glory-red-500 flex w-full px-3 py-2 text-white text-sm md:text-base font-bold">Studying
                                         in India vs Studying Abroad (UK)</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Education
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Education
                                         (Trends)</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Traditional,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Traditional,
                                         theory-based learning; focus on exams and memorization.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -771,13 +779,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Focus on
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Focus on
                                         Research</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Limited funding,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Limited funding,
                                         growing opportunities, still lagging in global research.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -787,13 +795,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Academics
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Academics
                                         Value</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Exam-oriented,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Exam-oriented,
                                         grades-focused system; high competition and pressure.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -803,13 +811,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Lack of
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Lack of
                                         Quality</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Quality varies,
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Quality varies,
                                         outdated curricula, faculty shortages, limited resources.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -822,19 +830,19 @@
                             <tr class="flex w-full">
                                 <td class="flex w-full">
                                     <span
-                                        class="bg-glory-red-500 flex w-full px-5 py-2 text-white text-sm md:text-base font-bold">Quality
+                                        class="bg-glory-red-500 flex w-full px-3 py-2 text-white text-sm md:text-base font-bold">Quality
                                         of Life in India vs Abroad</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Industrial
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Industrial
                                         History</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Industrial cities
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Industrial cities
                                         like Jamshedpur and Pune are key manufacturing hubs.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -844,12 +852,12 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Nature</span>
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Nature</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Natural beauty is
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Natural beauty is
                                         widespread, but national parks are often far from cities.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -859,13 +867,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Safety and
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Safety and
                                         Security</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Safety varies by
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Safety varies by
                                         region, higher crime in some urban areas.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -875,13 +883,13 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-full border-y">
-                                    <span class=" flex w-full px-5 py-1 text-glory-red-500 text-sm">Public
+                                    <span class=" flex w-full px-3 py-1 text-glory-red-500 text-sm">Public
                                         Transport</span>
                                 </td>
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-5 py-1">India: Developing public
+                                    <span class="flex w-full text-sm items-center px-3 py-1">India: Developing public
                                         transport, crowded and less reliable in some areas.</span>
                                 </td>
                                 <td class="flex w-1/2">
@@ -1727,8 +1735,8 @@
                         </div>
                         <div class="flex w-full md:order-1">
                             <div class="flex w-full max-w-xl mx-auto items-center justify-center">
-                                <img src="https://cdn.itm.edu/assets/salrry_banner_255e0086a0.webp" alt="graph"
-                                    class="flex w-full h-full rounded-xl object-contain object-center">
+                                <img src="https://cdn.itm.edu/assets/India_UK_MS_Abroad_Website_66278918f8.webp"
+                                    alt="graph" class="flex w-full h-full rounded-xl object-contain object-center">
                             </div>
                         </div>
                     </div>
@@ -1742,7 +1750,7 @@
             <div class="flex flex-col w-full max-w-7xl mx-auto gap-5 px-5 md:gap-8 py-5 md:py-8 lg:py-10 ">
                 <div class="flex w-full flex-col items-center justify-center">
                     <h2
-                        class="flex text-lg md:text-lg lg:text-xl xl:text-3xl font-bold   items-center justify-center md:px-5 text-white bg-black px-2 py-1 w-fit mx-auto rounded-md shimmer-effect1">
+                        class="flex text-lg md:text-lg lg:text-xl xl:text-3xl font-bold   items-center justify-center text-center md:px-5 text-white bg-black px-2 py-1 w-fit mx-auto rounded-md shimmer-effect1">
                         Beyond the basics. The ISU Advantage
                     </h2>
                 </div>
@@ -2219,9 +2227,9 @@
                     <div class="flex w-fit gap-5 justify-start">
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="text-sm md:text-sm lg:text-base font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     1:1 Mentorship 🚀
                                 </strong>
                             </div>
@@ -2245,9 +2253,9 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="flex text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="flex text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     Lisa - Your personal AI Teacher ❤️
                                 </strong>
                             </div>
@@ -2271,10 +2279,10 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
-                                    Hackathons: Real-World Problem Solving 💡
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
+                                    Hackathons: Problem Solving 💡
                                 </strong>
                             </div>
                             <div
@@ -2297,10 +2305,10 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
-                                    Tech Meetups & Industry Networking 🌐
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
+                                    Meetups & Industry Networking 🌐
                                 </strong>
                             </div>
                             <div
@@ -2324,9 +2332,9 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     Tech Meetups ⚡
                                 </strong>
                             </div>
@@ -2351,9 +2359,9 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     Contribute to Open Source 🥳
                                 </strong>
                             </div>
@@ -2379,9 +2387,9 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     Developer Conferences 🔥
                                 </strong>
                             </div>
@@ -2406,9 +2414,9 @@
                         </div>
 
                         <div class="flex flex-col gap-5 w-80">
-                            <div class="flex w-full h-20">
+                            <div class="flex w-full h-fit">
                                 <strong
-                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3">
+                                    class="text-sm md:text-sm lg:text-base  font-bold  py-1 h-fit text-center rounded-md mx-auto bg-white text-glory-blue-700 md:px-3 px-1">
                                     Celebrations & Outings 😍
                                 </strong>
                             </div>
@@ -4269,6 +4277,7 @@
     <script src="js/data.js"></script>
     <script src="js/form.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/utm.js"></script>
 
     <script rel=preconnect src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 

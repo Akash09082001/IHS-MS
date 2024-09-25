@@ -1,7 +1,8 @@
 
+
 const applyNow = () => {
     // Replace these values with your actual campaign data
-    const lpurl = "https://admission.isu.ac.in/bachelor-of-technology-application-form/";
+    const lpurl = "https://admission.isu.ac.in/isu-pathways-academy";
     const utmSource = getParameterByName('utm_source') || 'default_source';
     const utmMedium = getParameterByName('utm_medium') || 'default_medium';
     const utmCampaignName = getParameterByName('utm_campaign') || 'default_campaign';
@@ -22,6 +23,8 @@ const applyNow = () => {
     window.location.href = finalUrl;
 };
 
+
+
 const getParameterByName = (name, url = window.location.href) => {
     name = name.replace(/[[]]/g, '\\$&');
     const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
@@ -30,4 +33,3 @@ const getParameterByName = (name, url = window.location.href) => {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 };
-

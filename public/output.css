@@ -657,6 +657,14 @@ video {
   bottom: -1.25rem;
 }
 
+.-bottom-6{
+  bottom: -1.5rem;
+}
+
+.-bottom-8{
+  bottom: -2rem;
+}
+
 .-left-1{
   left: -0.25rem;
 }
@@ -827,14 +835,6 @@ video {
 
 .top-full{
   top: 100%;
-}
-
-.-bottom-6{
-  bottom: -1.5rem;
-}
-
-.-bottom-8{
-  bottom: -2rem;
 }
 
 .z-10{

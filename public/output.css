@@ -1018,6 +1018,10 @@ video {
   display: flex;
 }
 
+.inline-flex{
+  display: inline-flex;
+}
+
 .table{
   display: table;
 }
@@ -1079,6 +1083,10 @@ video {
 .size-8{
   width: 2rem;
   height: 2rem;
+}
+
+.h-0{
+  height: 0px;
 }
 
 .h-1{
@@ -2139,6 +2147,10 @@ video {
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-0{
+  --tw-bg-opacity: 0;
+}
+
 .bg-opacity-100{
   --tw-bg-opacity: 1;
 }
@@ -2165,6 +2177,10 @@ video {
 
 .bg-opacity-80{
   --tw-bg-opacity: 0.8;
+}
+
+.bg-\[url\(\'https\:\/\/cdn\.itm\.edu\/assets\/light_grey_lines_background_78370_2584_e4d7e1b942\.avif\'\)\]{
+  background-image: url('https://cdn.itm.edu/assets/light_grey_lines_background_78370_2584_e4d7e1b942.avif');
 }
 
 .bg-boa-banner{
@@ -3178,7 +3194,7 @@ video {
 
 .card-scroll::-webkit-scrollbar-thumb {
   border-radius: 5px !important;
-  background: #A91D54 !important;
+  background: #B31942 !important;
   -webkit-overflow-scrolling: auto;
 }
 
@@ -3750,14 +3766,6 @@ details>summary::-webkit-details-marker {
     border-radius: 0.75rem;
   }
 
-  .md\:bg-top-bg{
-    background-image: url('https://media.itm.ac.in/top_1_d3e6420d3c.webp');
-  }
-
-  .md\:bg-\[length\:auto_200px\]{
-    background-size: auto 200px;
-  }
-
   .md\:bg-\[length\:auto_50\%\]{
     background-size: auto 50%;
   }
@@ -3772,10 +3780,6 @@ details>summary::-webkit-details-marker {
 
   .md\:bg-\[top_36\%_center\]{
     background-position: top 36% center;
-  }
-
-  .md\:bg-\[top_5\%_right\]{
-    background-position: top 5% right;
   }
 
   .md\:bg-no-repeat{
@@ -3875,6 +3879,14 @@ details>summary::-webkit-details-marker {
 }
 
 @media (min-width: 1024px){
+  .lg\:order-1{
+    order: 1;
+  }
+
+  .lg\:order-2{
+    order: 2;
+  }
+
   .lg\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -3926,9 +3938,30 @@ details>summary::-webkit-details-marker {
     overflow-x: hidden;
   }
 
+  .lg\:bg-top-bg{
+    background-image: url('https://media.itm.ac.in/top_1_d3e6420d3c.webp');
+  }
+
+  .lg\:bg-\[length\:auto_200px\]{
+    background-size: auto 200px;
+  }
+
+  .lg\:bg-\[top_5\%_right\]{
+    background-position: top 5% right;
+  }
+
+  .lg\:bg-no-repeat{
+    background-repeat: no-repeat;
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .lg\:py-0{

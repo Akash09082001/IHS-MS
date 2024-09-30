@@ -2,7 +2,7 @@
 
 const applyNow = () => {
     // Replace these values with your actual campaign data
-    const lpurl = "https://admission.isu.ac.in/isu-pathways-academy";
+    const lpurl = "http://admission.isu.ac.in/isu-ms-abroad";
     const utmSource = getParameterByName('utm_source') || 'default_source';
     const utmMedium = getParameterByName('utm_medium') || 'default_medium';
     const utmCampaignName = getParameterByName('utm_campaign') || 'default_campaign';

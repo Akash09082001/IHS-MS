@@ -31,22 +31,10 @@ const studentsTSData = [
         sTSImg: "https://media.itm.ac.in/Husain_Hakim_566ce6019f.webp"
     },
     {
-        id: 6,
-        name: "Piyush Kumar Singh",
-        speack: "In 6 months, we have learned that languages which other college students would have taken 1-2 years to learn, Btech CSE is al about coding, so from start we focus on core fundamentals of CSE.",
-        sTSImg: "https://media.itm.ac.in/Piyush_Kumar_Singh_64e48b4bd4.webp"
-    },
-    {
         id: 7,
         name: "Atharav Patil",
         speack: "The entire Semester Iwas awesome! We had a sprint model that unburdened a lot of load and allowed us to focus on core skills, and industry leaders gave interesting lectures. Every day was more interesting than the other.",
         sTSImg: "https://media.itm.ac.in/Atharav_Patil_59e43c8335.webp"
-    },
-    {
-        id: 8,
-        name: "Manas More",
-        speack: "'INDIA'S BEST B.TECH CSE' truly lives up to its name; the first semester has remarkably improved my knowledge, confidence, and problem-solving skills, and Ieagerly anticipate acquiring more skills and sharing this passionate learning journey with friends. #EAT, SLEEP, CODE, REPEAT.",
-        sTSImg: "https://media.itm.ac.in/Manas_More_3893b429ab.webp"
     },
     {
         id: 9,
@@ -72,13 +60,6 @@ const studentsTSData = [
         speack: "Looking back 5 months ago, not only with respect to academics but also as a person overall, the changes are massive. Couldn't have asked for a push ahead in life than the one we got here in college, Every little thing brought about some value, right from the repetitive assignments to the guest lectures. Looking forward to even more thrilling semesters coming up",
         sTSImg: "https://media.itm.ac.in/Prem_Thatikonda_7a5cbeb092.webp"
     },
-    {
-        id: 13,
-        name: "Prem Thakare",
-        speack: "My mind, once a blank canvas, now dances with Python, C++, and Scratch tunes- a symphony of problem-solving. Love studying at ITM School of FutureTech",
-        sTSImg: "https://media.itm.ac.in/Prem_Thakare_93fcc78501.webp"
-    },
-
 ];
 
 

@@ -181,7 +181,7 @@
         </div>
 
         <div class="flex flex-col gap-3 w-fit fixed top-1/3 right-0 z-30 ">
-            <button aria-id="enquire-now" aria-heading="One last step before you connect us on WhatsApp"
+            <button aria-id="enquire-now" aria-heading="Hey , I want to know more about Masters Abroad Program"
                 onclick="openModal()" class="enquireNow flex w-fit bg-green-700 text-white px-2 py-2 rounded-md ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -206,12 +206,12 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 md:px-5 gap-4 w-full max-w-7xl mx-auto">
                     <div class="flex relative w-full h-fit md:order-2 md:justify-center md:items-center">
                         <div class="flex relative aspect-video md:max-w-xl w-full h-fit my-auto ">
-                            <video id="myVideo" poster="https://cdn.itm.edu/assets/heroposter_46ca507591.webp"
+                            <!-- <video id="myVideo" poster="https://cdn.itm.edu/assets/heroposter_46ca507591.webp"
                                 class=" flex aspect-video h-fit w-full md:w-fit md:rounded-xl" muted loop playsinline>
                                 <source src="https://cdn.itm.edu/assets/herovideo_2cf0b6b7d6.mp4" type="video/mp4" />
-                            </video>
-                            <!-- <img src="https://cdn.itm.edu/assets/hero_video_09ac61398d.gif" alt="" srcset=""
-                                class="w-full h-full md:rounded-xl"> -->
+                            </video> -->
+                            <img src="https://cdn.itm.edu/assets/Hero_image_corrected_eb160a61c5.webp" alt="" srcset=""
+                                class="w-full h-full md:rounded-xl">
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 md:gap-4 w-full px-5 md:px-0 md:order-1">
@@ -222,7 +222,7 @@
                             <h1 class="flex font-semibold gap-1 flex-col text-3xl md:text-3xl lg:text-4xl w-fit">
                                 <span
                                     class="bg-glory-blue-700 relative font-poppins text-white font-semibold w-fit px-2 py-2 rounded-md">
-                                    Masters Abroad at
+                                    Masters Abroad @
                                     <span class="flex absolute -right-7 -top-7 w-fit text-brand-yellow">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " viewBox="0 0 80 80"
                                             fill="currentColor">
@@ -271,8 +271,11 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </span>
-                                    <span>Earn your Master's Degree from the <u
-                                            class="underline decoration-yellow-400 decoration-2 underline-offset-4">UK</u>
+                                    <span class="inline-flex gap-2">Earn your Master's Degree from the <u
+                                            class="underline decoration-yellow-400 decoration-2 underline-offset-4">UK
+                                        </u>
+                                        <img src="https://cdn.itm.edu/assets/1f1ec_1f1e7_a33ebfb887.png" alt="uk"
+                                            class="h-6 w-6">
                                     </span>
                                 </li>
                                 <li class="flex w-full items-center gap-2 text-sm md:text-sm lg:text-base">
@@ -286,7 +289,7 @@
                                         </svg>
                                     </span>
                                     <span>
-                                        Master
+                                        Excel in
                                         <u
                                             class="underline decoration-yellow-400 decoration-2 underline-offset-4">IELTS</u>
                                         and get <u
@@ -307,7 +310,7 @@
                                     <span>
                                         <u class="underline decoration-yellow-400 decoration-2 underline-offset-4">2
                                             Years</u>
-                                        Post Work Visa upon Course Completion
+                                        Post Work Visa upon Course Completion<sup>*</sup>
                                     </span>
                                 </li>
                             </ul>
@@ -381,8 +384,8 @@
                                         <img src="https://cdn.itm.edu/assets/calender_c44341cf51.webp" alt="calender"
                                             class="w-full h-full">
                                     </span>
-                                    <strong class="text-lg text-center font-extrabold text-glory-blue-700">4 + 8 smart
-                                        learning </strong>
+                                    <strong class="text-lg text-center font-extrabold text-glory-blue-700">Form India to
+                                        UK</strong>
                                     <span class="text-sm md:text-sm lg:text-base text-center text-gray-500">4 months in
                                         India, 8
                                         months in UK.</span>
@@ -508,7 +511,7 @@
                                 <div class="relative flex w-full rounded-md shadow-sm">
                                     <div class="flex w-20 items-center">
                                         <select id="countrySelect" name="country" autocomplete="country"
-                                            class="flex w-full border text-sm h-9 rounded-sm outline-none border-none focus:outline-none">
+                                            class="flex w-full border text-center text-sm h-9 rounded-sm outline-none border-none focus:outline-none">
                                         </select>
                                     </div>
                                     <input type="number" name="phone-number" id="number" autocomplete="false"
@@ -525,9 +528,9 @@
                                         class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
                                         placeholder="Search State">
                                     <div
-                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto">
+                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto card-scroll">
                                         <ul id="stateResults"
-                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit card-scroll">
+                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit ">
                                         </ul>
                                     </div>
                                     <span class="flex absolute -bottom-4 left-0 text-xs text-white pl-3"
@@ -539,9 +542,9 @@
                                         class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
                                         placeholder="Search City">
                                     <div
-                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto">
+                                        class="flex w-full rounded-md absolute bg-white h-auto z-10 left-0 right-0 max-h-40 shadow-md top-full overflow-y-auto card-scroll">
                                         <ul id="cityResults"
-                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit card-scroll">
+                                            class="grid grid-cols-1 divide-y flex-col capitalize w-full h-fit">
                                         </ul>
                                     </div>
                                     <span class="flex absolute -bottom-4 left-0 text-xs text-white pl-3"
@@ -621,7 +624,7 @@
                 <div class="flex flex-col gap-1  w-full">
                     <h2
                         class="text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center text-center text-white bg-black px-2 py-1 w-fit mx-auto rounded-md shimmer-effect1">
-                        Traditional Study Abroad vs Our Masters Study Abroad
+                        Traditional Study Abroad vs Our Study Abroad
                     </h2>
                     <p class="flex w-full">
                         <span
@@ -644,7 +647,7 @@
                                 </th>
                                 <th
                                     class="flex w-1/2 py-2 text-base md:text-lg lg:text-xl xl:text-2xl border-r border-gray-300 items-center">
-                                    Our Masters Study Abroad
+                                    Our Study Abroad
                                 </th>
                             </tr>
                         </thead>
@@ -746,7 +749,7 @@
                             </tr>
                             <tr class="flex w-full">
                                 <td class="flex w-1/2 border-r border-gray-300">
-                                    <span class="flex w-full text-sm items-center px-3 py-1">£54000/yr (60 LPA)</span>
+                                    <span class="flex w-full text-sm items-center px-3 py-1">£54,000/yr (60 LPA)</span>
                                 </td>
                                 <td class="flex w-1/2">
                                     <span class="flex w-full text-sm px-2 py-1">₹12 LPA</span>
@@ -936,20 +939,38 @@
                 <div class="flex w-full items-center justify-center">
                     <h2
                         class="text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center text-center ">
+                        <div class="w-fit space-y-2">
+                            <span
+                                class="flex md:hidden w-fit mx-auto px-3 md:px-5 py-1 md:py-2 items-center gap-2 rounded-md bg-white text-glory-blue-700">Average
+                                Salaries for MS Graduates:
+                            </span>
+                            <span
+                                class="flex md:hidden w-fit mx-auto px-3 md:px-5 py-1 md:py-2 items-center gap-2 rounded-md bg-white text-glory-blue-700">
+                                UK
+                                <img src="https://cdn.itm.edu/assets/1f1ec_1f1e7_a33ebfb887.png" alt="uk"
+                                    class="h-6 w-6">
+                                vs India
+                                <img src="https://cdn.itm.edu/assets/1f1ee_1f1f3_88ae619103.png" alt="India"
+                                    class="h-6 w-6">
+                            </span>
+                        </div>
                         <span
-                            class="flex w-fit mx-auto px-3 md:px-5 py-1 md:py-2 rounded-md bg-white text-glory-blue-700">Average
-                            Salaries for MS Graduates: UK 🇬🇧 vs India 🇮🇳
+                            class="hidden md:flex w-fit mx-auto px-3 md:px-5 py-1 md:py-2 items-center gap-2 rounded-md bg-white text-glory-blue-700">Average
+                            Salaries for MS Graduates: UK <img
+                                src="https://cdn.itm.edu/assets/1f1ec_1f1e7_a33ebfb887.png" alt="uk" class="h-6 w-6"> vs
+                            India <img src="https://cdn.itm.edu/assets/1f1ee_1f1f3_88ae619103.png" alt="India"
+                                class="h-6 w-6">
                         </span>
                     </h2>
                 </div>
 
                 <div class="flex w-full">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
                         <div
-                            class="flex md:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center bg-black text-white">
-                            <ul class="flex flex-col gap-2 w-full max-w-xl">
+                            class="flex lg:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center bg-black text-white">
+                            <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                 <li class="flex w-full">
-                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                         Salary disparities between the UK and India are evident across sectors like
                                         computing, IT management, and big data analytics. In Sheffield, UK, computing
                                         professionals earn around £43,000 (~₹47 LPA), while IT managers average £38,000
@@ -959,7 +980,7 @@
                                     </p>
                                 </li>
                                 <li class="flex w-full">
-                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                         In contrast, salaries for similar roles in India are lower, with computing
                                         professionals earning around ₹4.2 LPA, IT managers around ₹7 LPA, and big data
                                         specialists around ₹12 LPA. However, professionals who gain international
@@ -971,10 +992,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="hidden md:flex rounded-2xl box-gradient1 p-1 md:order-2">
+                        <div class="hidden lg:flex rounded-2xl box-gradient1 p-1 lg:order-2">
                             <div
                                 class="flex flex-col gap-2 w-full rounded-xl items-center justify-center bg-black text-white">
-                                <ul class="flex flex-col gap-2 w-full max-w-xl">
+                                <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                     <li class="flex w-full">
                                         <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
                                             Salary disparities between the UK and India are evident across sectors like
@@ -1001,7 +1022,7 @@
                             </div>
                         </div>
                         <div class="flex w-full md:order-1">
-                            <div class="flex w-full max-w-xl mx-auto items-center justify-center ">
+                            <div class="flex w-full max-w-3xl mx-auto items-center justify-center ">
                                 <img src="https://cdn.itm.edu/assets/salrry_banner_255e0086a0.webp" alt="graph"
                                     class="flex w-full h-full rounded-xl object-contain object-center ">
                             </div>
@@ -1020,8 +1041,9 @@
 
                 <div class="flex flex-col gap-2 w-full">
                     <h2
-                        class="text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center text-center text-white bg-black px-2 py-1 w-fit mx-auto rounded-md shimmer-effect1">
-                        The Cutting-Edge MSc Curriculum at Sheffield Hallam University ✨
+                        class="inline-flex text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center text-center text-white bg-black px-2 py-1 gap-2 w-fit mx-auto rounded-md shimmer-effect1">
+                        The Cutting-Edge MSc Curriculum at Sheffield Hallam University <img
+                            src="https://cdn.itm.edu/assets/1f1ec_1f1e7_a33ebfb887.png" alt="uk" class="h-6 w-6 flex">
                     </h2>
                     <p class="w-full text-sm md:text-sm lg:text-base max-w-3xl mx-auto xl:text-lg text-center
                         text-gray-500">
@@ -1684,12 +1706,12 @@
                     </h2>
                 </div>
                 <div class="flex w-full">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
                         <div
-                            class="flex md:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center text-white">
-                            <ul class="flex flex-col gap-2 w-full max-w-xl">
+                            class="flex lg:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center text-white">
+                            <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                 <li class="flex w-full">
-                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                         MSc in Computing / IT Management / Big Data is a 12 months academic course
                                         on-campus at the Sheffield Hallam University UK. The initial online component of
                                         this program shall be with ITM Skills University Mumbai for 4 months which will
@@ -1698,7 +1720,7 @@
                                     </p>
                                 </li>
                                 <li class="flex w-full">
-                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                    <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                         Tuition fees for the initial component of the course is INR 4,00,000. For rest
                                         of the 8 months, you will be going to the UK and studying on-campus at the
                                         Sheffield Hallam University. Tuition fees for MSc in Computing / IT Management /
@@ -1707,12 +1729,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="hidden md:flex rounded-2xl box-gradient1 p-1 md:order-2">
+                        <div class="hidden lg:flex rounded-2xl box-gradient1 p-1 lg:order-2">
                             <div
                                 class="flex flex-col gap-2 w-full bg-black text-white rounded-xl items-center justify-center">
-                                <ul class="flex flex-col gap-2 w-full max-w-xl">
+                                <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                     <li class="flex w-full">
-                                        <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                        <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                             MSc in Computing / IT Management / Big Data is a 12 months academic course
                                             on-campus at the Sheffield Hallam University UK. The initial online
                                             component of this program shall be with ITM Skills University Mumbai for 4
@@ -1722,7 +1744,7 @@
                                         </p>
                                     </li>
                                     <li class="flex w-full">
-                                        <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
+                                        <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base lg:px-5">
                                             Tuition fees for the initial component of the course is INR 4,00,000. For
                                             rest of the 8 months, you will be going to the UK and studying on-campus at
                                             the Sheffield Hallam University. Tuition fees for MSc in Computing / IT
@@ -1733,8 +1755,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex w-full md:order-1">
-                            <div class="flex w-full max-w-xl mx-auto items-center justify-center">
+                        <div class="flex w-full lg:order-1">
+                            <div class="flex w-full max-w-3xl mx-auto items-center justify-center">
                                 <img src="https://cdn.itm.edu/assets/India_UK_MS_Abroad_Website_66278918f8.webp"
                                     alt="graph" class="flex w-full h-full rounded-xl object-contain object-center">
                             </div>
@@ -1769,7 +1791,7 @@
                             </div>
                             <div class="p-3 md:px-6 md:py-4">
                                 <p class="text-xs md:text-sm font-semibold text-gray-900">
-                                    Get Macbook* on your Day 1 in Campus at ITM
+                                    Get Macbook<sup>*</sup> in your 1st week at ITM
                                 </p>
                             </div>
                         </div>
@@ -1843,18 +1865,20 @@
             <div class="flex flex-col w-full max-w-7xl mx-auto gap-5 px-5 md:gap-8 py-5 md:py-8 lg:py-10 ">
                 <div class="flex w-full flex-col items-center justify-center">
                     <h2
-                        class="flex text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center w-fit md:px-5 py-1 md:py-2 text-white bg-black px-2 mx-auto rounded-md shimmer-effect1">
-                        Study at Sheffield Hallam
+                        class="inline-flex gap-2 text-lg md:text-lg lg:text-xl xl:text-3xl font-bold items-center justify-center w-fit md:px-5 py-1 md:py-2 text-white bg-black px-2 mx-auto rounded-md shimmer-effect1">
+                        Study at Sheffield Hallam <img src="https://cdn.itm.edu/assets/1f1ec_1f1e7_a33ebfb887.png"
+                            alt="uk" class="h-6 w-6 flex">
                     </h2>
                 </div>
                 <div class="flex w-full">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
-                        <div class="flex md:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center">
-                            <ul class="flex flex-col gap-2 w-full max-w-xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full max-w-7xl mx-auto">
+                        <div class="flex lg:hidden flex-col gap-3 w-full rounded-2xl items-center justify-center">
+                            <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                 <li class="flex w-full">
                                     <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
-                                        We’re one the UK’s largest universities, with over 32,000 students studying on
-                                        our campuses from over 100 different countries.
+                                        Sheffield Hallam University is one the UK’s largest universities, with over
+                                        32,000 students studying on
+                                        their campuses from over 100 different countries.
                                     </p>
                                 </li>
                                 <li class="flex w-full">
@@ -1885,14 +1909,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="hidden md:flex rounded-2xl box-gradient p-1">
+                        <div class="hidden lg:flex rounded-2xl box-gradient p-1">
                             <div class="flex flex-col gap-2 w-full bg-white rounded-xl items-center justify-center">
-                                <ul class="flex flex-col gap-2 w-full max-w-xl">
+                                <ul class="flex flex-col gap-2 w-full max-w-3xl">
                                     <li class="flex w-full">
                                         <p class=" text-justify w-full h-fit text-sm md:text-sm lg:text-base md:px-5">
-                                            We’re one the UK’s largest universities, with over 32,000 students studying
+                                            Sheffield Hallam University is one the UK’s largest universities, with over
+                                            32,000 students studying
                                             on
-                                            our campuses from over 100 different countries.
+                                            their campuses from over 100 different countries.
                                         </p>
                                     </li>
                                     <li class="flex w-full">
@@ -1913,14 +1938,15 @@
                                             enjoy British customs and learn about British culture, history and heritage.
                                         </p>
                                     </li>
-                                    <li class="flex gap-4 w-full h-24 md:px-5 mt-4">
+                                    <li class="flex gap-4 w-full md:w-fit h-24 md:px-5 mt-4">
                                         <div class="flex w-fit relative aspect-video h-full">
-                                            <img src="https://cdn.itm.edu/assets/shu_logo_45ce65dc5a.webp" alt=""
-                                                class="w-full object-contain object-left">
+                                            <img src="https://cdn.itm.edu/assets/shu_logo_45ce65dc5a.webp"
+                                                alt="SHU Logo"
+                                                class="w-full first-letter md:w-fit object-contain object-left">
                                         </div>
                                         <div class="flex w-fit relative aspect-video h-full">
-                                            <img src="https://cdn.itm.edu/assets/TEF_2023_Gold_8db57bb435.webp" alt=""
-                                                class="w-full object-contain object-left">
+                                            <img src="https://cdn.itm.edu/assets/TEF_2023_Gold_8db57bb435.webp"
+                                                alt="Award" class="w-full md:w-fit object-contain object-left">
                                         </div>
                                     </li>
                                 </ul>
@@ -2104,7 +2130,7 @@
                                         Industry Leaders</span>
                                     <span class="text-center text-sm md:text-sm lg:text-base text-gray-500">
                                         Partnered with companies that employ over 5000+ tech professionals
-                                        globally.
+                                        globally
                                     </span>
                                 </div>
                             </div>
@@ -2115,15 +2141,13 @@
                                 <div class="flex flex-col p-5 w-full h-full justify-around absolute z-10">
                                     <span class="flex h-10 w-10 md:w-14 md:h-14 mx-auto">
                                         <img width="100" height="100"
-                                            src="https://cdn.itm.edu/assets/unicron_5f9e640cdf.webp" alt="unicorn" />
+                                            src="https://cdn.itm.edu/assets/office_8b0b6575a7.png" alt="unicorn" />
                                     </span>
                                     <span class="text-center text-sm md:text-sm lg:text-base font-semibold">Program
                                         Designed by
                                         Experts</span>
-                                    <span class="text-center text-sm md:text-sm lg:text-base text-gray-500">Created by
-                                        Unicorn
-                                        Founders, CEOs, CTOs, VPs, and leading Engineering
-                                        Directors to ensure industry-relevant education.
+                                    <span class="text-center text-sm md:text-sm lg:text-base text-gray-500">Crafted by
+                                        Unicorn Founders, CEOs, CTOs, VPs, and top Engineering Directors
                                     </span>
                                 </div>
                             </div>
@@ -2139,10 +2163,9 @@
                                     <span class="text-center text-sm md:text-sm lg:text-base font-semibold">Exclusive
                                         Access to
                                         Mentors</span>
-                                    <span class="text-center text-sm md:text-sm lg:text-base text-gray-500">Meet these
-                                        leaders in
-                                        person, understand the global job market, and
-                                        learn what it takes to become a top professional in your field.
+                                    <span class="text-center text-sm md:text-sm lg:text-base text-gray-500">Meet
+                                        industry leaders, explore the global job market, and learn how to excel in your
+                                        field
                                     </span>
                                 </div>
                             </div>
@@ -2156,7 +2179,7 @@
 
         <section id="BOARD OF ADVISORS" class="flex w-full">
             <div
-                class="flex flex-col w-full max-w-7xl mx-auto gap-5 md:gap-8 lg:gap-10 px-5 py-5 md:py-8 lg:py-10 md:bg-top-bg md:bg-[length:auto_200px] md:bg-no-repeat md:bg-[top_5%_right]">
+                class="flex flex-col w-full max-w-7xl mx-auto gap-5 md:gap-8 lg:gap-10 px-5 py-5 md:py-8 lg:py-10 lg:bg-top-bg lg:bg-[length:auto_200px] lg:bg-no-repeat lg:bg-[top_5%_right]">
 
                 <div class="flex flex-col gap-2 w-full">
                     <h2
@@ -2700,7 +2723,7 @@
                     <div class="flex w-full h-full md:h-56 items-center justify-center">
                         <video id="ringVideo" class="aspect-video flex h-full w-fit object-contain " autoplay muted loop
                             playsinline>
-                            <source src="https://media.itm.ac.in/brochure_video_0b939d390c.mp4" type="video/mp4" />
+                            <source src="https://cdn.itm.edu/assets/gif_final_1_2_020043290a.mp4" type="video/mp4" />
                         </video>
                     </div>
 

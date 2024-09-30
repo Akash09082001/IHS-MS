@@ -146,17 +146,17 @@ boaDataCards.innerHTML = output1;
 
 function showBoaData(boaData) {
     let listCard = `
-    <div class="flex flex-col w-40 md:w-52 rounded-2xl">
-        <div class="flex w-full shadow-md bg-glory-red-500 rounded-2xl">
+    <div class="flex flex-col w-40 md:w-52 rounded-2xl border border-gray-200">
+        <div class="flex w-full bg-[url('https://cdn.itm.edu/assets/light_grey_lines_background_78370_2584_e4d7e1b942.avif')] bg-cover bg-opacity-0 shadow-md rounded-2xl bg-white">
             <img loading="lazy" src=${boaData.img} alt=${boaData.name}
                 class="flex w-full h-full object-cover rounded-2xl grayscale">
         </div>
-        <div class="flex flex-col items-center justify-center gap-1 py-3">
-            <strong class="text-xs md:text-base text-center text-glory-red-500 font-bold py-2">${boaData.name}</strong>
+        <div class="flex flex-col items-center justify-center gap-1 py-2">
+            <strong class="text-xs md:text-base text-center text-glory-red-500 font-bold py-1">${boaData.name}</strong>
             <div class="flex h-8 md:h-auto w-fit mx-auto">
                 <p class="text-xs text-center">${boaData.position}</p>
             </div>
-            <div class="flex h-12 w-fit mx-auto">
+            <div class="flex h-8 w-fit mx-auto">
                 <img loading="lazy" src=${boaData.logo}
                     class="flex h-full w-fit object-center object-contain" alt=${boaData.name}>
             </div>
